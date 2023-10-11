@@ -1,5 +1,6 @@
 package com.example.networkrequestexample
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,7 +24,12 @@ class NamesRvAdapter(val list: List<Student>) : RecyclerView.Adapter<ViewHolder>
         const val NORMAL_ITEM = 2
     }
 
+    var count = 0
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+
+        Log.d("TAG", "onCreateViewHolder: ${count++}")
+
         var viewHolder: ViewHolder
         when (viewType) {
             IMAGE_ITEM -> {

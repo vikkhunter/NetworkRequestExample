@@ -7,11 +7,9 @@
     <ImageView
         android:id="@+id/iv_photo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="@dimen/dimen_20"
-        android:paddingTop="@dimen/dimen_20"
-        android:paddingBottom="@dimen/dimen_20"
+        android:layout_height="150dp"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
