@@ -6,6 +6,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     lateinit var viewModel: MainViewModel
@@ -13,7 +14,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val recyclerView = findViewById<RecyclerView>(R.id.lv_names)
+        val adapter = NamesRvAdapter(getDummyData())
+        recyclerView.adapter = adapter
 
+    }
+
+    private fun getDummyData(): List<Student> {
+        return arrayListOf(
+            Student(0L, "Josef", ""),
+            Student(1L, "Rajesh", ""),
+            Student(2L, "Brett", ""),
+            Student(3L, "Vinay", ""),
+            Student(4L, "Jyoti", ""),
+            Student(5L, "Mister", ""),
+            Student(0L, "Josef", ""),
+            Student(1L, "Rajesh", ""),
+            Student(2L, "Brett", ""),
+            Student(3L, "Vinay", ""),
+            Student(4L, "Jyoti", ""),
+            Student(5L, "Mister", ""),
+        )
+    }
+
+    private fun listViewWithCustomAdapter() {
         val listView = findViewById<ListView>(R.id.lv_names)
         val adapter = NamesAdapter(
             arrayListOf(
