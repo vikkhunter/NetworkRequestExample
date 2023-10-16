@@ -52,5 +52,42 @@
 
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/tv_select_more_than_one"
+        style="@style/baseTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_more_than_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_answers" />
+
+
+    <CheckBox
+        android:id="@+id/cb_first_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/apple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_select_more_than_one" />
+
+    <CheckBox
+        android:id="@+id/cb_second_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_first_selection" />
+
+    <CheckBox
+        android:id="@+id/cb_third_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/mango"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_second_selection" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
