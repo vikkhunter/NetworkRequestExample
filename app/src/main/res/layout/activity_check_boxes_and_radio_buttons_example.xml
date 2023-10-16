@@ -15,35 +15,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <TextView
-        android:id="@+id/tv_question1"
-        style="@style/baseTextStyle"
+    <RadioGroup
+        android:id="@+id/rg_answers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/question"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_question2" />
+        app:layout_constraintTop_toBottomOf="@id/tv_question">
 
 
-    <TextView
-        android:id="@+id/tv_question2"
-        style="@style/baseTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/question"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_question" />
+        <RadioButton
+            android:id="@+id/rb_graduation"
+            style="@style/commonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graduation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_question" />
+
+        <RadioButton
+            android:id="@+id/rb_post_graduation"
+            style="@style/commonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post_graduation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rb_graduation" />
+
+        <RadioButton
+            style="@style/commonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rb_post_graduation" />
 
 
-    <TextView
-        android:id="@+id/tv_question3"
-        style="@style/baseTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/question"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_question1" />
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

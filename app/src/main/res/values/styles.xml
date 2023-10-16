@@ -2,12 +2,18 @@
 <resources>
 
     <style name="baseTextStyle" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">#E91E63</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/header_text_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">@dimen/dimen_20</item>
     </style>
 
+    <style name="commonRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/answer_text_color</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+    </style>
+
 
     <dimen name="header_text_size">20sp</dimen>
+    <color name="answer_text_color">#E91E63</color>
 </resources>
