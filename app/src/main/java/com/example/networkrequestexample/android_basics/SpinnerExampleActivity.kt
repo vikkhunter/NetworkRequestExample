@@ -1,18 +1,12 @@
-package com.example.networkrequestexample
+package com.example.networkrequestexample.android_basics
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.MenuItem
-import android.view.View
-import android.widget.AdapterView
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.Spinner
-import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
-import com.google.android.material.textfield.TextInputLayout
+import com.example.networkrequestexample.R
 
 class SpinnerExampleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

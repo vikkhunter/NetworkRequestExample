@@ -5,4 +5,7 @@
     <string name="graduation">Graduation</string>
     <string name="post_graduation">Post Graduation</string>
     <string name="phd">PHD</string>
+    <string name="create_database">Create Database</string>
+    <string name="delete_row">Delete Row</string>
+    <string name="update_row">Update row</string>
 </resources>

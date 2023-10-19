@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NetworkRequestExample"
         tools:targetApi="31">
+
         <activity
-            android:name=".CheckBoxesAndRadioButtonsExample"
+            android:name=".sqlite.SQliteExample"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,15 +22,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SpinnerExampleActivity"
+            android:name=".android_basics.CheckBoxesAndRadioButtonsExample"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".android_basics.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".android_basics.SpinnerExampleActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".android_basics.MainActivity"
             android:exported="true" />
     </application>
 

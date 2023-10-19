@@ -1,9 +1,10 @@
-package com.example.networkrequestexample
+package com.example.networkrequestexample.android_basics
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import com.example.networkrequestexample.R
 import com.google.android.material.textfield.TextInputLayout
 
 class TestActivity : AppCompatActivity() {

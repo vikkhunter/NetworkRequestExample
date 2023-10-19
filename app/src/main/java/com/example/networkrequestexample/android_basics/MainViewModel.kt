@@ -1,4 +1,4 @@
-package com.example.networkrequestexample
+package com.example.networkrequestexample.android_basics
 
 import androidx.lifecycle.ViewModel
 

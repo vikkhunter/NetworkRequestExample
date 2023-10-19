@@ -1,10 +1,11 @@
-package com.example.networkrequestexample
+package com.example.networkrequestexample.android_basics
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import com.example.networkrequestexample.R
 
 class CheckBoxesAndRadioButtonsExample : AppCompatActivity() {
 

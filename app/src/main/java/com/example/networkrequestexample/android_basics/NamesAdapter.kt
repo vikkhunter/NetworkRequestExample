@@ -1,4 +1,4 @@
-package com.example.networkrequestexample
+package com.example.networkrequestexample.android_basics
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.networkrequestexample.R
 
 class NamesAdapter(val list: List<Student>) : BaseAdapter() {
     override fun getCount(): Int {

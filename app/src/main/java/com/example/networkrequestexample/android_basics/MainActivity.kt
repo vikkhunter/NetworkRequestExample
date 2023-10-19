@@ -1,12 +1,11 @@
-package com.example.networkrequestexample
+package com.example.networkrequestexample.android_basics
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Button
 import android.widget.ListView
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
+import com.example.networkrequestexample.R
 
 class MainActivity : AppCompatActivity() {
     lateinit var viewModel: MainViewModel

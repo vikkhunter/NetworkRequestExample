@@ -1,4 +1,4 @@
-package com.example.networkrequestexample
+package com.example.networkrequestexample.android_basics
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.networkrequestexample.R
 
 class NamesRvAdapter(val list: List<Student>) : RecyclerView.Adapter<ViewHolder>() {
     class TextViewHolder(view: View) : RecyclerView.ViewHolder(view) {
