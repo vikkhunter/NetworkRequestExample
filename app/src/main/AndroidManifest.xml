@@ -13,6 +13,15 @@
         android:theme="@style/Theme.NetworkRequestExample"
         tools:targetApi="31">
         <activity
+            android:name=".mvvm.view.MVVMExample"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".room_db.RoobDBExample"
             android:exported="true">
             <intent-filter>
@@ -32,13 +41,13 @@
         </activity>
         <activity
             android:name=".android_basics.CheckBoxesAndRadioButtonsExample"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".android_basics.TestActivity"
             android:exported="false" />
         <activity
             android:name=".android_basics.SpinnerExampleActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".android_basics.MainActivity"
             android:exported="true" />

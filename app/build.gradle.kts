@@ -34,6 +34,11 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
 }
 
 dependencies {
@@ -51,6 +56,17 @@ dependencies {
     //retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+
+    //dagger-hilt
+    implementation ("com.google.dagger:hilt-android:2.45")
+    kapt ("com.google.dagger:hilt-compiler:2.44")
+    implementation ("androidx.activity:activity-ktx:1.7.2")
+    implementation ("androidx.fragment:fragment-ktx:1.6.1")
+
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
